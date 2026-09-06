@@ -1,339 +1,417 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Your Name — Portfolio</title>
-  <meta name="description" content="Personal portfolio of Your Name — developer, builder and entrepreneur.">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:wght@400;500&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- NAVBAR -->
-  <header class="site-header">
-    <div class="container nav-inner">
+<header class="site-header">
+  <div class="container nav-inner">
 
-      <a href="index.html" class="logo">YOUR NAME</a>
+    <a href="index.html" class="logo">YOUR NAME</a>
 
-      <nav class="main-nav">
-        <a href="resume.html">Resume</a>
-        <a href="projects.html">Projects</a>
-        <a href="consulting.html">Consulting</a>
-        <a href="content.html">Content</a>
-      </nav>
+    <nav class="main-nav">
+      <a href="resume.html">Resume</a>
+      <a href="projects.html">Projects</a>
+      <a href="consulting.html">Consulting</a>
+      <a href="content.html">Content</a>
+    </nav>
 
-      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
-        ◐
-      </button>
+    <button
+      id="themeToggle"
+      class="theme-toggle"
+      aria-label="Toggle dark mode">
+      ◐
+    </button>
+
+  </div>
+</header>
+
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-content">
+
+      <p class="eyebrow">
+        Developer · Builder · Entrepreneur
+      </p>
+
+      <h1>
+        I build ideas into
+        <em>useful things.</em>
+      </h1>
+
+      <p class="hero-text">
+        I work across technology, research and digital products,
+        turning complex ideas into simple and practical solutions.
+      </p>
+
+      <div class="hero-actions">
+
+        <a href="projects.html" class="button button-dark">
+          View my work
+        </a>
+
+        <a href="resume.html" class="button button-light">
+          Read my resume
+        </a>
+
+      </div>
 
     </div>
-  </header>
+  </section>
 
 
-  <main>
+  <!-- SELECTED WORK -->
+  <section class="section">
 
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container hero-content">
+    <div class="container">
 
-        <p class="eyebrow">Developer · Builder · Entrepreneur</p>
-
-        <h1>
-          I build ideas into
-          <em>useful things.</em>
-        </h1>
-
-        <p class="hero-text">
-          I work across technology, research and digital products,
-          turning complex ideas into simple and practical solutions.
-        </p>
-
-        <div class="hero-actions">
-          <a href="projects.html" class="button button-dark">
-            View my work
-          </a>
-
-          <a href="resume.html" class="button button-light">
-            Read my resume
-          </a>
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- SELECTED WORK -->
-    <section class="section">
-      <div class="container">
-
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Selected work</p>
-            <h2>Things I have built.</h2>
-          </div>
-
-          <a href="projects.html" class="text-link">
-            All projects →
-          </a>
-        </div>
-
-
-        <div class="card-grid three">
-
-          <article class="work-card">
-            <span class="card-number">01</span>
-
-            <h3>Project One</h3>
-
-            <p>
-              A digital product designed to solve a specific problem
-              through a simple and focused experience.
-            </p>
-
-            <div class="tags">
-              <span>Product</span>
-              <span>Development</span>
-            </div>
-          </article>
-
-
-          <article class="work-card">
-            <span class="card-number">02</span>
-
-            <h3>Project Two</h3>
-
-            <p>
-              An experiment combining technology, research and
-              practical applications.
-            </p>
-
-            <div class="tags">
-              <span>Research</span>
-              <span>Technology</span>
-            </div>
-          </article>
-
-
-          <article class="work-card">
-            <span class="card-number">03</span>
-
-            <h3>Project Three</h3>
-
-            <p>
-              A small independent project focused on learning,
-              experimentation and useful outcomes.
-            </p>
-
-            <div class="tags">
-              <span>Experiment</span>
-              <span>Design</span>
-            </div>
-          </article>
-
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- ABOUT -->
-    <section class="section section-soft">
-      <div class="container about-grid">
+      <div class="section-heading">
 
         <div>
-          <p class="eyebrow">About</p>
-          <h2>A curious mind with a bias toward building.</h2>
+          <p class="eyebrow">Selected work</p>
+          <h2>Things I have built.</h2>
         </div>
 
-        <div class="about-text">
+        <a href="projects.html" class="text-link">
+          All projects →
+        </a>
+
+      </div>
+
+
+      <div class="card-grid three">
+
+        <article class="work-card">
+
+          <span class="card-number">01</span>
+
+          <h3>Project One</h3>
+
           <p>
-            I enjoy understanding how things work, identifying
-            interesting problems and turning ideas into concrete projects.
+            A digital product designed to solve a specific
+            problem through a simple and focused experience.
           </p>
 
+          <div class="tags">
+            <span>Product</span>
+            <span>Development</span>
+          </div>
+
+        </article>
+
+
+        <article class="work-card">
+
+          <span class="card-number">02</span>
+
+          <h3>Project Two</h3>
+
           <p>
-            My interests sit at the intersection of technology,
-            entrepreneurship, research and communication.
+            An experiment combining technology, research
+            and practical applications.
           </p>
 
-          <a href="resume.html" class="text-link">
-            More about me →
-          </a>
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- CONSULTING -->
-    <section class="section">
-      <div class="container">
-
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Consulting</p>
-            <h2>From idea to execution.</h2>
+          <div class="tags">
+            <span>Research</span>
+            <span>Technology</span>
           </div>
 
-          <a href="consulting.html" class="text-link">
-            Explore consulting →
-          </a>
-        </div>
+        </article>
 
 
-        <div class="card-grid three">
+        <article class="work-card">
 
-          <article class="service-card">
-            <span class="service-index">01</span>
-            <h3>Strategy</h3>
-            <p>
-              Clarifying ideas, priorities and technical directions
-              before investing time and resources.
-            </p>
-          </article>
+          <span class="card-number">03</span>
 
-          <article class="service-card">
-            <span class="service-index">02</span>
-            <h3>Build</h3>
-            <p>
-              Turning concepts into prototypes, websites and
-              practical digital products.
-            </p>
-          </article>
+          <h3>Project Three</h3>
 
-          <article class="service-card">
-            <span class="service-index">03</span>
-            <h3>Review</h3>
-            <p>
-              Reviewing existing products, ideas or technical
-              approaches and identifying opportunities to improve them.
-            </p>
-          </article>
+          <p>
+            An independent project focused on learning,
+            experimentation and useful outcomes.
+          </p>
 
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- CONTENT -->
-    <section class="section section-soft">
-      <div class="container">
-
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Content</p>
-            <h2>Ideas worth sharing.</h2>
+          <div class="tags">
+            <span>Experiment</span>
+            <span>Design</span>
           </div>
 
-          <a href="content.html" class="text-link">
-            See all content →
-          </a>
-        </div>
+        </article>
 
-
-        <div class="content-grid">
-
-          <article class="content-card">
-            <div class="content-visual visual-video">
-              <span>VIDEO</span>
-            </div>
-
-            <div class="content-info">
-              <span class="content-type">YouTube</span>
-              <h3>Building in public</h3>
-              <p>
-                Thoughts, experiments and lessons from building projects.
-              </p>
-            </div>
-          </article>
-
-
-          <article class="content-card">
-            <div class="content-visual visual-article">
-              <span>NOTE</span>
-            </div>
-
-            <div class="content-info">
-              <span class="content-type">Article</span>
-              <h3>Learning through projects</h3>
-              <p>
-                Notes about technology, research and entrepreneurship.
-              </p>
-            </div>
-          </article>
-
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- CONTACT -->
-    <section class="section">
-      <div class="container">
-
-        <div class="contact-card">
-
-          <div>
-            <p class="eyebrow">Contact</p>
-            <h2>Have an interesting idea?</h2>
-          </div>
-
-          <a href="mailto:hello@example.com" class="button button-dark">
-            Get in touch
-          </a>
-
-        </div>
-
-      </div>
-    </section>
-
-  </main>
-
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-
-      <span>© 2026 Your Name</span>
-
-      <div class="socials">
-        <a href="https://github.com/YOURUSERNAME"
-           target="_blank"
-           rel="noopener noreferrer">
-          GitHub
-        </a>
-
-        <a href="https://www.linkedin.com/in/YOURUSERNAME/"
-           target="_blank"
-           rel="noopener noreferrer">
-          LinkedIn
-        </a>
-
-        <a href="https://www.youtube.com/@YOURCHANNEL"
-           target="_blank"
-           rel="noopener noreferrer">
-          YouTube
-        </a>
-
-        <a href="mailto:hello@example.com">
-          Email
-        </a>
       </div>
 
     </div>
-  </footer>
+
+  </section>
 
 
-  <script src="script.js"></script>
+  <!-- ABOUT -->
+  <section class="section section-soft">
+
+    <div class="container about-grid">
+
+      <div>
+        <p class="eyebrow">About</p>
+
+        <h2>
+          A curious mind with
+          a bias toward building.
+        </h2>
+      </div>
+
+
+      <div class="about-text">
+
+        <p>
+          I enjoy understanding how things work, identifying
+          interesting problems and turning ideas into concrete projects.
+        </p>
+
+        <p>
+          My interests sit at the intersection of technology,
+          entrepreneurship, research and communication.
+        </p>
+
+        <a href="resume.html" class="text-link">
+          More about me →
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONSULTING -->
+  <section class="section">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div>
+          <p class="eyebrow">Consulting</p>
+          <h2>From idea to execution.</h2>
+        </div>
+
+        <a href="consulting.html" class="text-link">
+          Explore consulting →
+        </a>
+
+      </div>
+
+
+      <div class="card-grid three">
+
+        <article class="service-card">
+
+          <span class="service-index">01</span>
+
+          <h3>Strategy</h3>
+
+          <p>
+            Clarifying ideas, priorities and technical directions
+            before investing time and resources.
+          </p>
+
+        </article>
+
+
+        <article class="service-card">
+
+          <span class="service-index">02</span>
+
+          <h3>Build</h3>
+
+          <p>
+            Turning concepts into prototypes, websites
+            and practical digital products.
+          </p>
+
+        </article>
+
+
+        <article class="service-card">
+
+          <span class="service-index">03</span>
+
+          <h3>Review</h3>
+
+          <p>
+            Reviewing existing products, ideas or technical
+            approaches and identifying opportunities to improve them.
+          </p>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTENT -->
+  <section class="section section-soft">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div>
+          <p class="eyebrow">Content</p>
+          <h2>Ideas worth sharing.</h2>
+        </div>
+
+        <a href="content.html" class="text-link">
+          See all content →
+        </a>
+
+      </div>
+
+
+      <div class="content-grid">
+
+        <article class="content-card">
+
+          <div class="content-visual visual-video">
+            <span>VIDEO</span>
+          </div>
+
+          <div class="content-info">
+
+            <span class="content-type">
+              YouTube
+            </span>
+
+            <h3>Building in public</h3>
+
+            <p>
+              Thoughts, experiments and lessons from building projects.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="content-card">
+
+          <div class="content-visual visual-article">
+            <span>NOTE</span>
+          </div>
+
+          <div class="content-info">
+
+            <span class="content-type">
+              Article
+            </span>
+
+            <h3>Learning through projects</h3>
+
+            <p>
+              Notes about technology, research and entrepreneurship.
+            </p>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+  <section class="section">
+
+    <div class="container">
+
+      <div class="contact-card">
+
+        <div>
+
+          <p class="eyebrow">
+            Contact
+          </p>
+
+          <h2>
+            Have an interesting idea?
+          </h2>
+
+        </div>
+
+        <a
+          href="mailto:hello@example.com"
+          class="button button-dark">
+          Get in touch
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+  <div class="container footer-inner">
+
+    <span>
+      © 2026 Your Name
+    </span>
+
+    <div class="socials">
+
+      <a
+        href="https://github.com/YOURUSERNAME"
+        target="_blank"
+        rel="noopener noreferrer">
+        GitHub
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/YOURUSERNAME/"
+        target="_blank"
+        rel="noopener noreferrer">
+        LinkedIn
+      </a>
+
+      <a
+        href="https://www.youtube.com/@YOURCHANNEL"
+        target="_blank"
+        rel="noopener noreferrer">
+        YouTube
+      </a>
+
+      <a href="mailto:hello@example.com">
+        Email
+      </a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<script src="script.js"></script>
 
 </body>
 </html>
