@@ -1,4 +1,3 @@
-```javascript
 const toggle = document.getElementById("themeToggle");
 
 if (localStorage.getItem("theme") === "dark") {
@@ -18,4 +17,3 @@ toggle.addEventListener("click", () => {
 
   toggle.textContent = isDark ? "☼" : "☾";
 });
-```
