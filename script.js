@@ -1,19 +1,34 @@
-const toggle = document.getElementById("themeToggle");
+const themeToggle = document.getElementById("themeToggle");
 
-if (localStorage.getItem("theme") === "dark") {
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme === "dark") {
   document.body.classList.add("dark");
-  toggle.textContent = "☼";
 }
 
-toggle.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
+function updateThemeIcon() {
+  if (!themeToggle) return;
 
-  const isDark = document.body.classList.contains("dark");
+  themeToggle.textContent =
+    document.body.classList.contains("dark")
+      ? "☼"
+      : "◐";
+}
 
-  localStorage.setItem(
-    "theme",
-    isDark ? "dark" : "light"
-  );
+updateThemeIcon();
 
-  toggle.textContent = isDark ? "☼" : "☾";
-});
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+
+    document.body.classList.toggle("dark");
+
+    const isDark = document.body.classList.contains("dark");
+
+    localStorage.setItem(
+      "theme",
+      isDark ? "dark" : "light"
+    );
+
+    updateThemeIcon();
+  });
+}
