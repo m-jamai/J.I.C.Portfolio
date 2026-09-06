@@ -3,147 +3,213 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Consulting — Your Name</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:wght@400;500&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header class="header">
-  <div class="container nav">
+<header class="site-header">
+  <div class="container nav-inner">
+
     <a href="index.html" class="logo">YOUR NAME</a>
 
-    <nav>
-      <a href="index.html">Home</a>
+    <nav class="main-nav">
       <a href="resume.html">Resume</a>
       <a href="projects.html">Projects</a>
-      <a href="consulting.html">Consulting</a>
+      <a href="consulting.html" class="active">Consulting</a>
       <a href="content.html">Content</a>
     </nav>
 
-    <button id="themeToggle">☾</button>
+    <button id="themeToggle" class="theme-toggle">◐</button>
+
   </div>
 </header>
 
+
 <main>
 
-<section class="page-hero container">
-  <span class="small-label">CONSULTING</span>
-  <h1>Practical thinking for digital and technical problems.</h1>
-  <p>
-    I help individuals and teams clarify ideas,
-    build products and make better technical decisions.
-  </p>
-</section>
+  <section class="page-hero">
+    <div class="container">
 
+      <p class="eyebrow">Consulting</p>
 
-<section class="section container">
+      <h1>
+        Practical thinking for
+        <em>digital and technical problems.</em>
+      </h1>
 
-  <div class="section-heading">
-    <h2>What I can help with</h2>
-  </div>
-
-  <div class="cards">
-
-    <article class="card service-card">
-      <span class="small-label">01</span>
-      <h3>Strategy</h3>
       <p>
-        Clarify your idea, priorities, positioning
-        and roadmap.
+        Helping individuals, founders and small teams move
+        from uncertainty to a clear plan of action.
       </p>
-      <a href="#" class="text-link">Learn more →</a>
-    </article>
 
-    <article class="card service-card">
-      <span class="small-label">02</span>
-      <h3>Build</h3>
-      <p>
-        Turn a validated idea into a practical
-        digital product or prototype.
-      </p>
-      <a href="#" class="text-link">Learn more →</a>
-    </article>
-
-    <article class="card service-card">
-      <span class="small-label">03</span>
-      <h3>Review</h3>
-      <p>
-        Review an existing product, architecture,
-        workflow or technical direction.
-      </p>
-      <a href="#" class="text-link">Learn more →</a>
-    </article>
-
-  </div>
-
-</section>
+    </div>
+  </section>
 
 
-<section class="section container">
+  <!-- SERVICES -->
+  <section class="section">
+    <div class="container">
 
-  <div class="section-heading">
-    <h2>How it works</h2>
-  </div>
-
-  <div class="process-grid">
-
-    <article class="process-card">
-      <span class="small-label">01</span>
-      <h3>Discover</h3>
-      <p>
-        Understand the context, constraints
-        and actual problem.
-      </p>
-    </article>
-
-    <article class="process-card">
-      <span class="small-label">02</span>
-      <h3>Plan</h3>
-      <p>
-        Define the smallest useful path forward
-        and expected outcome.
-      </p>
-    </article>
-
-    <article class="process-card">
-      <span class="small-label">03</span>
-      <h3>Build</h3>
-      <p>
-        Execute, test, document and iterate.
-      </p>
-    </article>
-
-  </div>
-
-</section>
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Services</p>
+          <h2>How I can help.</h2>
+        </div>
+      </div>
 
 
-<section class="section container">
+      <div class="card-grid three">
 
-  <div class="contact-card">
-    <span class="small-label">START A CONVERSATION</span>
-    <h2>Have a problem worth discussing?</h2>
-    <p>
-      Tell me briefly what you're working on
-      and where you need help.
-    </p>
-    <a href="mailto:hello@example.com" class="btn">
-      hello@example.com
-    </a>
-  </div>
+        <article class="service-card large">
+          <span class="service-index">01</span>
 
-</section>
+          <h3>Strategy</h3>
+
+          <p>
+            Clarify the problem, define priorities and identify
+            the right direction before building.
+          </p>
+
+          <ul class="service-list">
+            <li>Problem definition</li>
+            <li>Technical direction</li>
+            <li>Product strategy</li>
+          </ul>
+        </article>
+
+
+        <article class="service-card large">
+          <span class="service-index">02</span>
+
+          <h3>Build</h3>
+
+          <p>
+            Turn an idea into a working prototype, website
+            or digital product.
+          </p>
+
+          <ul class="service-list">
+            <li>Prototyping</li>
+            <li>Web development</li>
+            <li>Automation</li>
+          </ul>
+        </article>
+
+
+        <article class="service-card large">
+          <span class="service-index">03</span>
+
+          <h3>Review</h3>
+
+          <p>
+            Analyze an existing project and identify
+            concrete opportunities for improvement.
+          </p>
+
+          <ul class="service-list">
+            <li>Technical review</li>
+            <li>Product feedback</li>
+            <li>Improvement roadmap</li>
+          </ul>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- PROCESS -->
+  <section class="section section-soft">
+    <div class="container">
+
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Process</p>
+          <h2>Simple by design.</h2>
+        </div>
+      </div>
+
+
+      <div class="process-grid">
+
+        <article class="process-card">
+          <span>01</span>
+          <h3>Discover</h3>
+          <p>
+            Understand the problem, context and desired outcome.
+          </p>
+        </article>
+
+        <article class="process-card">
+          <span>02</span>
+          <h3>Plan</h3>
+          <p>
+            Define the priorities, approach and next concrete steps.
+          </p>
+        </article>
+
+        <article class="process-card">
+          <span>03</span>
+          <h3>Build</h3>
+          <p>
+            Execute, test, learn and improve.
+          </p>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- CONTACT -->
+  <section class="section">
+    <div class="container">
+
+      <div class="contact-card">
+
+        <div>
+          <p class="eyebrow">Let's talk</p>
+          <h2>Working on something interesting?</h2>
+        </div>
+
+        <a href="mailto:hello@example.com" class="button button-dark">
+          Start a conversation
+        </a>
+
+      </div>
+
+    </div>
+  </section>
 
 </main>
 
-<footer>
+
+<footer class="site-footer">
   <div class="container footer-inner">
+
     <span>© 2026 Your Name</span>
-    <span>Personal website</span>
+
+    <div class="socials">
+      <a href="https://github.com/YOURUSERNAME" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/YOURUSERNAME/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://www.youtube.com/@YOURCHANNEL" target="_blank" rel="noopener noreferrer">YouTube</a>
+      <a href="mailto:hello@example.com">Email</a>
+    </div>
+
   </div>
 </footer>
 
 <script src="script.js"></script>
+
 </body>
 </html>
