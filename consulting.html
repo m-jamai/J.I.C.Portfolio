@@ -9,114 +9,141 @@
 
 <body>
 
-<header class="navbar">
-  <a href="index.html" class="logo">YOUR NAME</a>
+<header class="header">
+  <div class="container nav">
+    <a href="index.html" class="logo">YOUR NAME</a>
 
-  <nav>
-    <a href="resume.html">Resume</a>
-    <a href="projects.html">Projects</a>
-    <a class="active" href="consulting.html">Consulting</a>
-    <a href="content.html">Content</a>
-  </nav>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="resume.html">Resume</a>
+      <a href="projects.html">Projects</a>
+      <a href="consulting.html">Consulting</a>
+      <a href="content.html">Content</a>
+    </nav>
 
-  <button id="themeToggle" class="theme-btn">☼</button>
+    <button id="themeToggle">☾</button>
+  </div>
 </header>
 
+<main>
 
-<main class="page">
-
-  <p class="label">CONSULTING</p>
-
-  <h1>Let's solve<br>a real problem.</h1>
-
-  <p class="page-intro">
-    I help founders, creators and teams turn ideas
-    into practical digital products.
+<section class="page-hero container">
+  <span class="small-label">CONSULTING</span>
+  <h1>Practical thinking for digital and technical problems.</h1>
+  <p>
+    I help individuals and teams clarify ideas,
+    build products and make better technical decisions.
   </p>
+</section>
 
 
-  <section class="services">
+<section class="section container">
 
-    <article>
-      <span>01</span>
-      <h2>Strategy</h2>
+  <div class="section-heading">
+    <h2>What I can help with</h2>
+  </div>
+
+  <div class="cards">
+
+    <article class="card service-card">
+      <span class="small-label">01</span>
+      <h3>Strategy</h3>
       <p>
-        Clarify your idea, roadmap, product direction
-        or technical decisions.
+        Clarify your idea, priorities, positioning
+        and roadmap.
+      </p>
+      <a href="#" class="text-link">Learn more →</a>
+    </article>
+
+    <article class="card service-card">
+      <span class="small-label">02</span>
+      <h3>Build</h3>
+      <p>
+        Turn a validated idea into a practical
+        digital product or prototype.
+      </p>
+      <a href="#" class="text-link">Learn more →</a>
+    </article>
+
+    <article class="card service-card">
+      <span class="small-label">03</span>
+      <h3>Review</h3>
+      <p>
+        Review an existing product, architecture,
+        workflow or technical direction.
+      </p>
+      <a href="#" class="text-link">Learn more →</a>
+    </article>
+
+  </div>
+
+</section>
+
+
+<section class="section container">
+
+  <div class="section-heading">
+    <h2>How it works</h2>
+  </div>
+
+  <div class="process-grid">
+
+    <article class="process-card">
+      <span class="small-label">01</span>
+      <h3>Discover</h3>
+      <p>
+        Understand the context, constraints
+        and actual problem.
       </p>
     </article>
 
-    <article>
-      <span>02</span>
-      <h2>Build</h2>
+    <article class="process-card">
+      <span class="small-label">02</span>
+      <h3>Plan</h3>
       <p>
-        Turn an idea into a functional website,
-        MVP or digital product.
+        Define the smallest useful path forward
+        and expected outcome.
       </p>
     </article>
 
-    <article>
-      <span>03</span>
-      <h2>Review</h2>
+    <article class="process-card">
+      <span class="small-label">03</span>
+      <h3>Build</h3>
       <p>
-        Review an existing product, website or
-        technical setup and identify improvements.
+        Execute, test, document and iterate.
       </p>
     </article>
 
-  </section>
+  </div>
+
+</section>
 
 
-  <section class="process">
+<section class="section container">
 
-    <p class="label">PROCESS</p>
-
-    <div class="process-row">
-      <div>
-        <span>01</span>
-        <h2>Discover</h2>
-      </div>
-
-      <div>
-        <span>02</span>
-        <h2>Plan</h2>
-      </div>
-
-      <div>
-        <span>03</span>
-        <h2>Build</h2>
-      </div>
-    </div>
-
-  </section>
-
-
-  <section class="contact-box">
-
-    <p class="label">START A CONVERSATION</p>
-
-    <h2>Have something<br>in mind?</h2>
-
-    <a href="mailto:hello@example.com" class="btn btn-dark">
+  <div class="contact-card">
+    <span class="small-label">START A CONVERSATION</span>
+    <h2>Have a problem worth discussing?</h2>
+    <p>
+      Tell me briefly what you're working on
+      and where you need help.
+    </p>
+    <a href="mailto:hello@example.com" class="btn">
       hello@example.com
     </a>
+  </div>
 
-  </section>
+</section>
 
 </main>
 
-
 <footer>
-  <span>© 2026 Your Name</span>
-
-  <div>
-    <a href="#">GitHub</a>
-    <a href="#">LinkedIn</a>
-    <a href="#">YouTube</a>
+  <div class="container footer-inner">
+    <span>© 2026 Your Name</span>
+    <span>Personal website</span>
   </div>
 </footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
