@@ -3,166 +3,256 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Content — Your Name</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:wght@400;500&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header class="header">
-  <div class="container nav">
+<header class="site-header">
+  <div class="container nav-inner">
+
     <a href="index.html" class="logo">YOUR NAME</a>
 
-    <nav>
-      <a href="index.html">Home</a>
+    <nav class="main-nav">
       <a href="resume.html">Resume</a>
       <a href="projects.html">Projects</a>
       <a href="consulting.html">Consulting</a>
-      <a href="content.html">Content</a>
+      <a href="content.html" class="active">Content</a>
     </nav>
 
-    <button id="themeToggle">☾</button>
+    <button id="themeToggle" class="theme-toggle">◐</button>
+
   </div>
 </header>
 
+
 <main>
 
-<section class="page-hero container">
-  <span class="small-label">CONTENT</span>
-  <h1>Notes, videos and ideas I publish while learning and building.</h1>
-  <p>
-    A collection of things I share through YouTube,
-    articles, tutorials and resources.
-  </p>
-</section>
+  <section class="page-hero">
+    <div class="container">
 
+      <p class="eyebrow">Content</p>
 
-<section class="section container">
+      <h1>
+        Notes, videos and ideas I publish
+        <em>while learning and building.</em>
+      </h1>
 
-  <div class="section-heading">
-    <h2>YouTube</h2>
-    <a href="#">Visit channel →</a>
-  </div>
-
-  <div class="content-cards">
-
-    <article class="content-card">
-
-      <div class="content-image">
-        <span>VIDEO</span>
-      </div>
-
-      <div class="content-body">
-        <span class="small-label">YOUTUBE · VIDEO</span>
-        <h3>Video title goes here</h3>
-        <p>
-          Short description of the topic,
-          what viewers will learn and why it matters.
-        </p>
-        <a href="#" class="text-link">Watch video →</a>
-      </div>
-
-    </article>
-
-
-    <article class="content-card">
-
-      <div class="content-image">
-        <span>VIDEO</span>
-      </div>
-
-      <div class="content-body">
-        <span class="small-label">YOUTUBE · VIDEO</span>
-        <h3>Video title goes here</h3>
-        <p>
-          Short description of the topic,
-          what viewers will learn and why it matters.
-        </p>
-        <a href="#" class="text-link">Watch video →</a>
-      </div>
-
-    </article>
-
-  </div>
-
-</section>
-
-
-<section class="section container">
-
-  <div class="section-heading">
-    <h2>Articles</h2>
-  </div>
-
-  <div class="content-list">
-
-    <article>
-      <span class="small-label">ARTICLE · 2026</span>
-      <h3>Article title goes here</h3>
       <p>
-        Short description of the article and
-        the main idea discussed.
+        A collection of thoughts, experiments, explanations
+        and things I find worth sharing.
       </p>
-      <a href="#" class="text-link">Read article →</a>
-    </article>
 
-    <article>
-      <span class="small-label">ARTICLE · 2026</span>
-      <h3>Article title goes here</h3>
-      <p>
-        Short description of the article and
-        the main idea discussed.
-      </p>
-      <a href="#" class="text-link">Read article →</a>
-    </article>
-
-  </div>
-
-</section>
+    </div>
+  </section>
 
 
-<section class="section container">
+  <!-- VIDEOS -->
+  <section class="section">
+    <div class="container">
 
-  <div class="section-heading">
-    <h2>Resources</h2>
-  </div>
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">YouTube</p>
+          <h2>Videos & experiments.</h2>
+        </div>
 
-  <div class="cards">
+        <a href="https://www.youtube.com/@YOURCHANNEL"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="text-link">
+          Visit channel →
+        </a>
+      </div>
 
-    <article class="card">
-      <span class="small-label">RESOURCE</span>
-      <h3>Resource title</h3>
-      <p>Short explanation of this resource.</p>
-      <a href="#" class="text-link">Open resource →</a>
-    </article>
 
-    <article class="card">
-      <span class="small-label">RESOURCE</span>
-      <h3>Resource title</h3>
-      <p>Short explanation of this resource.</p>
-      <a href="#" class="text-link">Open resource →</a>
-    </article>
+      <div class="content-grid">
 
-    <article class="card">
-      <span class="small-label">RESOURCE</span>
-      <h3>Resource title</h3>
-      <p>Short explanation of this resource.</p>
-      <a href="#" class="text-link">Open resource →</a>
-    </article>
+        <article class="content-card">
 
-  </div>
+          <div class="content-visual visual-video">
+            <span>VIDEO 01</span>
+          </div>
 
-</section>
+          <div class="content-info">
+            <span class="content-type">YouTube</span>
+            <h3>Building something from scratch</h3>
+            <p>
+              A practical walkthrough of an idea from concept to prototype.
+            </p>
+
+            <a href="#" class="text-link">
+              Watch video →
+            </a>
+          </div>
+
+        </article>
+
+
+        <article class="content-card">
+
+          <div class="content-visual visual-video">
+            <span>VIDEO 02</span>
+          </div>
+
+          <div class="content-info">
+            <span class="content-type">YouTube</span>
+            <h3>Lessons from a project</h3>
+            <p>
+              What worked, what failed and what I learned along the way.
+            </p>
+
+            <a href="#" class="text-link">
+              Watch video →
+            </a>
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ARTICLES -->
+  <section class="section section-soft">
+    <div class="container">
+
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Writing</p>
+          <h2>Articles & notes.</h2>
+        </div>
+      </div>
+
+
+      <div class="content-grid">
+
+        <article class="content-card">
+
+          <div class="content-visual visual-article">
+            <span>NOTE 01</span>
+          </div>
+
+          <div class="content-info">
+            <span class="content-type">Article</span>
+            <h3>Learning by building</h3>
+            <p>
+              Why practical projects are one of the best ways
+              to understand difficult concepts.
+            </p>
+
+            <a href="#" class="text-link">
+              Read article →
+            </a>
+          </div>
+
+        </article>
+
+
+        <article class="content-card">
+
+          <div class="content-visual visual-article">
+            <span>NOTE 02</span>
+          </div>
+
+          <div class="content-info">
+            <span class="content-type">Article</span>
+            <h3>From idea to execution</h3>
+            <p>
+              A simple framework for turning an abstract idea
+              into something concrete.
+            </p>
+
+            <a href="#" class="text-link">
+              Read article →
+            </a>
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- RESOURCES -->
+  <section class="section">
+    <div class="container">
+
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Resources</p>
+          <h2>Things worth exploring.</h2>
+        </div>
+      </div>
+
+
+      <div class="card-grid three">
+
+        <article class="resource-card">
+          <span>01</span>
+          <h3>Books</h3>
+          <p>
+            Books that influenced how I think about technology,
+            business and learning.
+          </p>
+          <a href="#" class="text-link">Explore →</a>
+        </article>
+
+
+        <article class="resource-card">
+          <span>02</span>
+          <h3>Tools</h3>
+          <p>
+            Software and tools I use to research, build and organize ideas.
+          </p>
+          <a href="#" class="text-link">Explore →</a>
+        </article>
+
+
+        <article class="resource-card">
+          <span>03</span>
+          <h3>References</h3>
+          <p>
+            Papers, websites and resources that I regularly return to.
+          </p>
+          <a href="#" class="text-link">Explore →</a>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
 
 </main>
 
-<footer>
+
+<footer class="site-footer">
   <div class="container footer-inner">
+
     <span>© 2026 Your Name</span>
-    <span>Personal website</span>
+
+    <div class="socials">
+      <a href="https://github.com/YOURUSERNAME" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/YOURUSERNAME/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://www.youtube.com/@YOURCHANNEL" target="_blank" rel="noopener noreferrer">YouTube</a>
+      <a href="mailto:hello@example.com">Email</a>
+    </div>
+
   </div>
 </footer>
 
 <script src="script.js"></script>
+
 </body>
 </html>
