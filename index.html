@@ -1,179 +1,211 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Your Name — Personal Brand">
-  <title>Mohammed JAMAI — Personal Brand</title>
+  <title>Mohammed JAMAI — Personal Site</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header class="navbar">
-  <a href="index.html" class="logo">YOUR NAME</a>
+<header class="header">
+  <div class="container nav">
+    <a href="index.html" class="logo">YOUR NAME</a>
 
-  <nav>
-    <a href="resume.html">Resume</a>
-    <a href="projects.html">Projects</a>
-    <a href="consulting.html">Consulting</a>
-    <a href="content.html">Content</a>
-  </nav>
+    <nav>
+      <a href="resume.html">Resume</a>
+      <a href="projects.html">Projects</a>
+      <a href="consulting.html">Consulting</a>
+      <a href="content.html">Content</a>
+    </nav>
 
-  <button id="themeToggle" class="theme-btn">☼</button>
+    <button id="themeToggle">☾</button>
+  </div>
 </header>
 
 <main>
 
-  <section class="hero">
-    <p class="label">DEVELOPER · BUILDER · ENTREPRENEUR</p>
+  <section class="hero container">
+    <p class="eyebrow">Research · Technology · Entrepreneurship</p>
 
     <h1>
-      I build ideas<br>
-      into <span>useful things.</span>
+      I build, research, and<br>
+      work on meaningful ideas.
     </h1>
 
-    <p class="hero-text">
-      I'm Your Name — I build digital products, solve problems,
-      and share what I learn along the way.
+    <p class="intro">
+      I’m [Your Name], working across technology, research,
+      product development, and entrepreneurship.
     </p>
 
-    <div class="buttons">
-      <a href="projects.html" class="btn btn-dark">View Projects</a>
-      <a href="consulting.html" class="btn">Let's Talk</a>
+    <div class="actions">
+      <a href="projects.html" class="button">View projects</a>
+      <a href="resume.html" class="text-link">Read resume →</a>
     </div>
   </section>
 
 
-  <section class="section">
-    <div class="section-title">
-      <p class="label">SELECTED WORK</p>
+  <section class="section container">
+    <div class="section-header">
+      <h2>Selected Projects</h2>
       <a href="projects.html">View all →</a>
     </div>
 
-    <div class="project-grid">
+    <div class="project-list">
 
-      <article class="project-card">
+      <article class="project">
         <div class="project-number">01</div>
-        <h2>Project Name</h2>
-        <p>
-          A short description of the project and the problem it solves.
-        </p>
-        <a href="#">View project ↗</a>
+        <div>
+          <h3>Project Title</h3>
+          <p>
+            Short description of the project, the problem you worked on,
+            and the result.
+          </p>
+          <span>Research · Technology</span>
+        </div>
       </article>
 
-      <article class="project-card">
+      <article class="project">
         <div class="project-number">02</div>
-        <h2>Project Name</h2>
-        <p>
-          A short description of the project and what you built.
-        </p>
-        <a href="#">View project ↗</a>
+        <div>
+          <h3>Project Title</h3>
+          <p>
+            Short description of the project, the problem you worked on,
+            and the result.
+          </p>
+          <span>Product · Strategy</span>
+        </div>
       </article>
 
-      <article class="project-card">
+      <article class="project">
         <div class="project-number">03</div>
-        <h2>Project Name</h2>
-        <p>
-          Another project, experiment, or product you're proud of.
-        </p>
-        <a href="#">View project ↗</a>
+        <div>
+          <h3>Project Title</h3>
+          <p>
+            Short description of the project, the problem you worked on,
+            and the result.
+          </p>
+          <span>Experiment · Software</span>
+        </div>
       </article>
 
     </div>
   </section>
 
 
-  <section class="section about-section">
+  <section class="section container about">
 
     <div>
-      <p class="label">ABOUT</p>
-      <h2>Building, learning<br>and sharing.</h2>
+      <p class="eyebrow">About</p>
+      <h2>About me</h2>
     </div>
 
-    <div class="about-text">
+    <div>
       <p>
-        I'm interested in technology, products and business.
-        I like taking ideas from zero to something real.
+        I am interested in the intersection of technology,
+        research, and entrepreneurship.
       </p>
 
       <p>
-        This website is where I document my work, share what
-        I'm learning and connect with interesting people.
+        This website is a place to document what I build,
+        what I learn, and the work I do with others.
       </p>
 
-      <a href="resume.html">More about me →</a>
+      <a href="resume.html" class="text-link">More about me →</a>
     </div>
 
   </section>
 
 
-  <section class="section consulting-preview">
+  <section class="section container">
 
-    <p class="label">CONSULTING</p>
+    <div class="section-header">
+      <h2>Consulting</h2>
+      <a href="consulting.html">Learn more →</a>
+    </div>
 
-    <div class="consulting-row">
-      <h2>Have an idea?<br>Let's build it.</h2>
+    <div class="columns">
 
       <div>
+        <span class="number">01</span>
+        <h3>Strategy</h3>
         <p>
-          I help founders and teams turn ideas into
-          practical digital solutions.
+          Clarifying ideas, priorities, positioning,
+          and next steps.
         </p>
-
-        <a href="consulting.html" class="btn btn-dark">
-          Explore Consulting
-        </a>
       </div>
+
+      <div>
+        <span class="number">02</span>
+        <h3>Building</h3>
+        <p>
+          Turning ideas into focused digital products
+          and practical solutions.
+        </p>
+      </div>
+
+      <div>
+        <span class="number">03</span>
+        <h3>Review</h3>
+        <p>
+          Reviewing products, technical decisions,
+          and existing workflows.
+        </p>
+      </div>
+
     </div>
 
   </section>
 
 
-  <section class="section content-preview">
+  <section class="section container">
 
-    <div class="section-title">
-      <div>
-        <p class="label">CONTENT</p>
-        <h2>What I'm learning & sharing.</h2>
-      </div>
-
+    <div class="section-header">
+      <h2>Content</h2>
       <a href="content.html">View content →</a>
     </div>
 
-    <div class="content-grid">
+    <div class="content-list">
 
-      <article>
+      <div>
         <span>YOUTUBE</span>
         <h3>Video title goes here</h3>
-        <p>Short description of your video.</p>
-      </article>
+        <p>Short description of the video.</p>
+      </div>
 
-      <article>
+      <div>
         <span>ARTICLE</span>
         <h3>Article title goes here</h3>
-        <p>Something interesting you learned.</p>
-      </article>
+        <p>Short description of the article.</p>
+      </div>
 
     </div>
 
+  </section>
+
+
+  <section class="section container contact">
+    <p class="eyebrow">Contact</p>
+    <h2>Have an idea worth exploring?</h2>
+    <a href="mailto:hello@example.com" class="button">
+      Get in touch
+    </a>
   </section>
 
 </main>
 
 
 <footer>
-  <span>© 2026 Your Name</span>
-
-  <div>
-    <a href="#">GitHub</a>
-    <a href="#">LinkedIn</a>
-    <a href="#">YouTube</a>
+  <div class="container footer-inner">
+    <span>© 2026 Your Name</span>
+    <span>Built with HTML & CSS</span>
   </div>
 </footer>
-
 
 <script src="script.js"></script>
 
 </body>
 </html>
+```
