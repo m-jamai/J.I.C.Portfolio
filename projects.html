@@ -9,123 +9,127 @@
 
 <body>
 
-<header class="navbar">
-  <a href="index.html" class="logo">YOUR NAME</a>
+<header class="header">
+  <div class="container nav">
+    <a href="index.html" class="logo">YOUR NAME</a>
 
-  <nav>
-    <a href="resume.html">Resume</a>
-    <a class="active" href="projects.html">Projects</a>
-    <a href="consulting.html">Consulting</a>
-    <a href="content.html">Content</a>
-  </nav>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="resume.html">Resume</a>
+      <a href="projects.html">Projects</a>
+      <a href="consulting.html">Consulting</a>
+      <a href="content.html">Content</a>
+    </nav>
 
-  <button id="themeToggle" class="theme-btn">☼</button>
+    <button id="themeToggle">☾</button>
+  </div>
 </header>
 
+<main>
 
-<main class="page">
+<section class="page-hero container">
+  <span class="small-label">PROJECTS</span>
+  <h1>Things I have built, studied and experimented with.</h1>
+  <p>
+    A collection of selected work across technology,
+    research, products and experiments.
+  </p>
+</section>
 
-  <p class="label">PROJECTS</p>
 
-  <h1>Things I've<br>built.</h1>
+<section class="section container">
 
+  <div class="project-showcase">
 
-  <div class="projects-list">
-
-    <article class="large-project">
-
-      <div class="project-meta">
-        <span>01</span>
-        <span>PRODUCT</span>
+    <article class="project-card">
+      <div class="project-image">
+        <span>PROJECT 01</span>
       </div>
 
-      <h2>Project Name</h2>
+      <div class="project-info">
+        <div>
+          <span class="small-label">RESEARCH · TECHNOLOGY</span>
+          <h2>Project Title</h2>
+          <p>
+            Explain the problem, your approach,
+            your contribution and the final result.
+          </p>
+        </div>
 
-      <p>
-        Explain the project, the problem you solved,
-        and what you learned from building it.
-      </p>
+        <div class="tags">
+          <span>Research</span>
+          <span>Development</span>
+          <span>Design</span>
+        </div>
 
-      <div class="tags">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
+        <a href="#" class="text-link">View project →</a>
       </div>
-
-      <div class="project-links">
-        <a href="#">Live Demo ↗</a>
-        <a href="#">GitHub ↗</a>
-      </div>
-
     </article>
 
 
-    <article class="large-project">
-
-      <div class="project-meta">
-        <span>02</span>
-        <span>EXPERIMENT</span>
+    <article class="project-card">
+      <div class="project-image">
+        <span>PROJECT 02</span>
       </div>
 
-      <h2>Project Name</h2>
+      <div class="project-info">
+        <div>
+          <span class="small-label">PRODUCT · STRATEGY</span>
+          <h2>Project Title</h2>
+          <p>
+            Explain the problem, your approach,
+            your contribution and the final result.
+          </p>
+        </div>
 
-      <p>
-        A side project, experiment, tool or business idea.
-      </p>
+        <div class="tags">
+          <span>Product</span>
+          <span>Strategy</span>
+          <span>Business</span>
+        </div>
 
-      <div class="tags">
-        <span>Technology</span>
-        <span>Product</span>
+        <a href="#" class="text-link">View project →</a>
       </div>
-
-      <div class="project-links">
-        <a href="#">View Project ↗</a>
-      </div>
-
     </article>
 
 
-    <article class="large-project">
-
-      <div class="project-meta">
-        <span>03</span>
-        <span>CLIENT</span>
+    <article class="project-card">
+      <div class="project-image">
+        <span>PROJECT 03</span>
       </div>
 
-      <h2>Project Name</h2>
+      <div class="project-info">
+        <div>
+          <span class="small-label">SOFTWARE · EXPERIMENT</span>
+          <h2>Project Title</h2>
+          <p>
+            Explain the problem, your approach,
+            your contribution and the final result.
+          </p>
+        </div>
 
-      <p>
-        A client project showing your ability to create
-        real-world value.
-      </p>
+        <div class="tags">
+          <span>Software</span>
+          <span>Experiment</span>
+        </div>
 
-      <div class="tags">
-        <span>Web</span>
-        <span>Development</span>
+        <a href="#" class="text-link">View project →</a>
       </div>
-
-      <div class="project-links">
-        <a href="#">Case Study ↗</a>
-      </div>
-
     </article>
 
   </div>
 
+</section>
+
 </main>
 
-
 <footer>
-  <span>© 2026 Your Name</span>
-
-  <div>
-    <a href="#">GitHub</a>
-    <a href="#">LinkedIn</a>
-    <a href="#">YouTube</a>
+  <div class="container footer-inner">
+    <span>© 2026 Your Name</span>
+    <span>Personal website</span>
   </div>
 </footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
