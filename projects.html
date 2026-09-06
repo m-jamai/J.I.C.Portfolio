@@ -3,133 +3,190 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Projects — Your Name</title>
+  <meta name="description" content="Projects and experiments by Your Name.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:wght@400;500&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header class="header">
-  <div class="container nav">
+<header class="site-header">
+  <div class="container nav-inner">
+
     <a href="index.html" class="logo">YOUR NAME</a>
 
-    <nav>
-      <a href="index.html">Home</a>
+    <nav class="main-nav">
       <a href="resume.html">Resume</a>
-      <a href="projects.html">Projects</a>
+      <a href="projects.html" class="active">Projects</a>
       <a href="consulting.html">Consulting</a>
       <a href="content.html">Content</a>
     </nav>
 
-    <button id="themeToggle">☾</button>
+    <button id="themeToggle" class="theme-toggle">◐</button>
+
   </div>
 </header>
 
+
 <main>
 
-<section class="page-hero container">
-  <span class="small-label">PROJECTS</span>
-  <h1>Things I have built, studied and experimented with.</h1>
-  <p>
-    A collection of selected work across technology,
-    research, products and experiments.
-  </p>
-</section>
+  <section class="page-hero">
+    <div class="container">
+
+      <p class="eyebrow">Projects</p>
+
+      <h1>
+        Things I have built,
+        <em>studied and experimented with.</em>
+      </h1>
+
+      <p>
+        A selection of products, experiments and technical projects.
+      </p>
+
+    </div>
+  </section>
 
 
-<section class="section container">
+  <section class="section">
+    <div class="container project-list">
 
-  <div class="project-showcase">
 
-    <article class="project-card">
-      <div class="project-image">
-        <span>PROJECT 01</span>
-      </div>
+      <!-- PROJECT 01 -->
+      <article class="project-card">
 
-      <div class="project-info">
-        <div>
-          <span class="small-label">RESEARCH · TECHNOLOGY</span>
-          <h2>Project Title</h2>
+        <div class="project-image project-one">
+          <span>PROJECT 01</span>
+        </div>
+
+        <div class="project-info">
+
+          <div class="project-meta">
+            <span>2026</span>
+            <span>Product · Web</span>
+          </div>
+
+          <h2>Project One</h2>
+
           <p>
-            Explain the problem, your approach,
-            your contribution and the final result.
+            A digital product designed to make a complex process
+            simpler and more accessible.
           </p>
+
+          <div class="tags">
+            <span>JavaScript</span>
+            <span>Product</span>
+            <span>UX</span>
+          </div>
+
+          <a href="#" class="text-link">
+            View project →
+          </a>
+
         </div>
 
-        <div class="tags">
-          <span>Research</span>
-          <span>Development</span>
-          <span>Design</span>
+      </article>
+
+
+      <!-- PROJECT 02 -->
+      <article class="project-card">
+
+        <div class="project-image project-two">
+          <span>PROJECT 02</span>
         </div>
 
-        <a href="#" class="text-link">View project →</a>
-      </div>
-    </article>
+        <div class="project-info">
 
+          <div class="project-meta">
+            <span>2025</span>
+            <span>Research · AI</span>
+          </div>
 
-    <article class="project-card">
-      <div class="project-image">
-        <span>PROJECT 02</span>
-      </div>
+          <h2>Project Two</h2>
 
-      <div class="project-info">
-        <div>
-          <span class="small-label">PRODUCT · STRATEGY</span>
-          <h2>Project Title</h2>
           <p>
-            Explain the problem, your approach,
-            your contribution and the final result.
+            An experimental project exploring the practical use
+            of AI and automation.
           </p>
+
+          <div class="tags">
+            <span>AI</span>
+            <span>Python</span>
+            <span>Research</span>
+          </div>
+
+          <a href="#" class="text-link">
+            View project →
+          </a>
+
         </div>
 
-        <div class="tags">
-          <span>Product</span>
-          <span>Strategy</span>
-          <span>Business</span>
+      </article>
+
+
+      <!-- PROJECT 03 -->
+      <article class="project-card">
+
+        <div class="project-image project-three">
+          <span>PROJECT 03</span>
         </div>
 
-        <a href="#" class="text-link">View project →</a>
-      </div>
-    </article>
+        <div class="project-info">
 
+          <div class="project-meta">
+            <span>2025</span>
+            <span>Experiment</span>
+          </div>
 
-    <article class="project-card">
-      <div class="project-image">
-        <span>PROJECT 03</span>
-      </div>
+          <h2>Project Three</h2>
 
-      <div class="project-info">
-        <div>
-          <span class="small-label">SOFTWARE · EXPERIMENT</span>
-          <h2>Project Title</h2>
           <p>
-            Explain the problem, your approach,
-            your contribution and the final result.
+            An independent experiment built to test an idea,
+            learn a technology and create something useful.
           </p>
+
+          <div class="tags">
+            <span>Experiment</span>
+            <span>Development</span>
+          </div>
+
+          <a href="#" class="text-link">
+            View project →
+          </a>
+
         </div>
 
-        <div class="tags">
-          <span>Software</span>
-          <span>Experiment</span>
-        </div>
+      </article>
 
-        <a href="#" class="text-link">View project →</a>
-      </div>
-    </article>
 
-  </div>
-
-</section>
+    </div>
+  </section>
 
 </main>
 
-<footer>
+
+<footer class="site-footer">
   <div class="container footer-inner">
+
     <span>© 2026 Your Name</span>
-    <span>Personal website</span>
+
+    <div class="socials">
+      <a href="https://github.com/YOURUSERNAME" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/YOURUSERNAME/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://www.youtube.com/@YOURCHANNEL" target="_blank" rel="noopener noreferrer">YouTube</a>
+      <a href="mailto:hello@example.com">Email</a>
+    </div>
+
   </div>
 </footer>
 
 <script src="script.js"></script>
+
 </body>
 </html>
